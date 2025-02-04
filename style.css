@@ -1214,6 +1214,13 @@ input.main__about-search-menu-block {
   }
 }
 
+@media (max-width: 670px) {
+  .main__about-header {
+    text-align: center;
+    font-size: 42px;
+  }
+}
+
 @media (max-width: 620px) {
   .main__catalog-upper {
     flex-direction: column;
@@ -1252,6 +1259,17 @@ input.main__about-search-menu-block {
   .footer__nav-list {
     align-items: start;
     text-align: left;
+  }
+}
+
+@media (max-width: 504px) {
+  .main-car {
+    top: 530px;
+    max-width: 90%;
+  }
+
+  .main__about-search-menu {
+    margin-bottom: 50px;
   }
 }
 
@@ -1312,7 +1330,7 @@ input.main__about-search-menu-block {
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 438px) {
   .main__about-header {
     text-align: center;
     margin-top: 36px;
