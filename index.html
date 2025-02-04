@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" class="css" />
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>RapidAuto - ваш автомобильный мир</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrapper content-container">
+        <nav class="header__nav">
+          <div class="header__logo-container">
+            <a href="/" class="header__logo-link">
+              <img
+                src="./assets/img/RapidAuto.svg"
+                alt="Логотип"
+                class="header__logo"
+              />
+            </a>
+          </div>
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="#catalog" class="header__menu-link">Каталог</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#support" class="header__menu-link">Поддержка</a>
+            </li>
+          </ul>
+          <div class="header__menu-icon">
+            <div class="header__hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
+        <div class="header__mobile-menu container">
+          <p>Навигация</p>
+          <div class="decor-line"></div>
+          <ul class="header__mobile-list">
+            <li class="header__element">
+              <a class="header__link" href="#" tabindex="6">О нас</a>
+            </li>
+            <li class="header__element">
+              <a class="header__link" href="#" tabindex="7">Каталог</a>
+            </li>
+            <li class="header__element">
+              <a class="header__link" href="#" tabindex="8">Поддержка</a>
+            </li>
+          </ul>
+          <p>Контакты</p>
+          <div class="decor-line-red"></div>
+          <ul class="header__mobile-list">
+            <li class="header__element">
+              <address>Адрес: адрес</address>
+            </li>
+            <li class="header__element">
+              Номер:
+              <a href="tel:+7 888 888 89 29" class="main__info-contact-link"
+                >+7 888 888 89 29</a
+              >
+            </li>
+            <li class="header__element">
+              Почта:
+              <a
+                href="mailto:example@example.ru"
+                class="main__info-contact-link"
+                >contact@rapidauto.ru</a
+              >
+            </li>
+            <li class="header__element">Часы работы: Пн-Пт: 9:00 - 18:00</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main__about">
+        <div class="main__about-wrapper content-container">
+          <h2 class="main__about-header">Осуществляем Мечты</h2>
+          <div class="main__about-search-menu-container">
+            <div class="main__about-search-menu">
+              <div class="dropdown">
+                <button class="main__about-search-menu-block">
+                  Новые
+                  <img src="./assets/img/triangle.svg" />
+                </button>
+                <div class="dropdown-menu">
+                  <a href="#">Новые</a>
+                  <a href="#">С пробегом</a>
+                </div>
+              </div>
+              <div class="main__about-search-menu-space"></div>
+              <div class="dropdown">
+                <button class="main__about-search-menu-block">
+                  Бренд
+                  <img src="./assets/img/triangle.svg" />
+                </button>
+                <div class="dropdown-menu">
+                  <a href="#">BMW</a>
+                  <a href="#">Skoda</a>
+                  <a href="#">Audi</a>
+                </div>
+              </div>
+              <div class="main__about-search-menu-space"></div>
+
+              <div class="dropdown">
+                <button class="main__about-search-menu-block">
+                  Модель
+                  <img src="./assets/img/triangle.svg" />
+                </button>
+                <div class="dropdown-menu">
+                  <a href="#">Выберите бренд</a>
+                </div>
+              </div>
+              <div class="main__about-search-menu-space"></div>
+
+              <input
+                class="main__about-search-menu-block"
+                type="text"
+                placeholder="Цена"
+              />
+
+              <div class="main__about-search-menu-space"></div>
+              <div class="main__about-search-button-wrapper">
+                <button class="main__about-search-menu-block-button">
+                  <img src="./assets/img/search.svg" />
+                </button>
+                <div class="main__about-search-button-text">Поиск</div>
+              </div>
+            </div>
+            <div class="main__about-search-menu-background"></div>
+          </div>
+          <img src="./assets/img/maincar.png" class="main-car" />
+        </div>
+      </section>
+      <section class="main__company content-container">
+        <h1 class="main__company-header">Продажа автомобилей в Барнауле</h1>
+        <div class="main__company-block">
+          <div class="main__company-info">
+            <h3 class="main__company-info-header">Выбираете машину?</h3>
+            <p>
+              Наша квалифицированная команда поможет вам найти автомобиль,
+              который идеально соответствует вашему стилю жизни и бюджету.
+              Посетите нас сегодня и позвольте нам воплотить в жизнь вашу мечту.
+            </p>
+            <a href="/catalog" class="main__company-info-link">
+              <button class="main__company-info-button active-button">
+                Перейти в каталог
+                <img src="./assets/img/arrow.svg" alt="Стрелка" />
+              </button>
+            </a>
+          </div>
+          <div class="main__company-info">
+            <h3 class="main__company-info-header">О нас</h3>
+            <p>
+              Рапид Авто - это больше, чем просто дилерский центр; мы - ваши
+              партнеры в поиске идеального автомобиля. Получите полный и
+              персонализированный опыт покупки автомобиля - от просмотра нашего
+              обширного ассортимента новых и подержанных автомобилей до поиска
+              наилучших вариантов финансирования.
+            </p>
+            <address class="main__company-info-adress">
+              Балтийская ул., 88, г. Барнаул
+            </address>
+          </div>
+        </div>
+      </section>
+      <section class="main__info">
+        <div class="main__info-container content-container">
+          <div class="main__info-statistic">
+            <img
+              src="assets/img/RapidAutoWCircle.svg"
+              class="main__info-logo"
+            />
+            <p><span>10</span> лет на рынке</p>
+            <p><span>950</span> проданных автомобилей</p>
+          </div>
+        </div>
+        <div class="main__info-contacts content-container">
+          <h3 class="main__info-contacts-title">Контакты</h3>
+          <div class="main__info-contacts-list">
+            <div class="main__info-contact">
+              <img src="assets/img/phone.svg" class="main__info-contact-icon" />
+              <a href="tel:+7 888 888 89 29" class="main__info-contact-link"
+                >+7 888 888 89 29</a
+              >
+            </div>
+            <div class="main__info-contact">
+              <img src="assets/img/time.svg" class="main__info-contact-icon" />
+              <div class="main__info-contact-hours">
+                <p class="main__info-contact-time">С 9:00 — 19:00</p>
+                <p class="main__info-contact-days">Без выходных</p>
+              </div>
+            </div>
+            <div class="main__info-contact">
+              <img src="assets/img/mail.svg" class="main__info-contact-icon" />
+              <a
+                href="mailto:contact@rapidauto.ru"
+                class="main__info-contact-link"
+                >contact@rapidauto.ru</a
+              >
+            </div>
+          </div>
+          <div class="main__info-sites">
+            <a
+              href="https://www.avito.ru/"
+              class="sites-button"
+              target="_blank"
+            >
+              <img
+                src="./assets/img/avito.svg"
+                alt="Avito"
+                class="avito-icon"
+              />
+              Мы на Авито
+            </a>
+            <a href="https://www.drom.ru/" class="sites-button" target="_blank">
+              <img src="./assets/img/drom.svg" alt="Avito" class="drom-icon" />
+              Мы на Drom
+            </a>
+          </div>
+          <p class="main__about-inn">
+            ООО «Рапид Авто», ИНН 2222879111, КПП 432201022, ОГРН 12152225033692
+          </p>
+        </div>
+      </section>
+      <section class="main__catalog-preview content-container">
+        <div class="main__catalog-upper">
+          <h2 class="main__catalog-header">Ознакомьтесь с автомобилями</h2>
+          <a href="/catalog" class="main__catalog-link">Все ↗</a>
+        </div>
+        <div class="container swiper">
+          <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img
+                    src="./assets/img/volvoxc60.jpg"
+                    alt="Card Image"
+                    class="card-image"
+                  />
+                  <div class="card-item-description">
+                    <p>Volvo XC60</p>
+                    <p>2.0 AT (249 л.с.) 4WD</p>
+                    <div class="card-item-kpp-mileage">
+                      <img src="./assets/img/speedometer.svg" alt="Пробег" />
+                      <span>1 000 км</span>
+                      <img src="./assets/img/transmission.svg" alt="Пробег" />
+                      <span>АКПП</span>
+                    </div>
+                    <span>2024</span>
+                    <span>от 8 900 000</span>
+                  </div>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img
+                    src="./assets/img/L200.jpg"
+                    alt="Card Image"
+                    class="card-image"
+                  />
+                  <div class="card-item-description">
+                    <p>Mitshubishi L200</p>
+                    <p>2.4d AT (190 л.с.) 4WD</p>
+                    <div class="card-item-kpp-mileage">
+                      <img src="./assets/img/speedometer.svg" alt="Пробег" />
+                      <span>Без пробега</span>
+                      <img src="./assets/img/transmission.svg" alt="Пробег" />
+                      <span>АКПП</span>
+                    </div>
+                    <span>2024</span>
+                    <span>от 5 500 000</span>
+                  </div>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img
+                    src="./assets/img/mbcle.avif"
+                    alt="Card Image"
+                    class="card-image"
+                  />
+                  <div class="card-item-description">
+                    <p>Mercedes-Benz CLE-Class</p>
+                    <p>3.0 AT (440 л.с.) 4WD</p>
+                    <div class="card-item-kpp-mileage">
+                      <img src="./assets/img/speedometer.svg" alt="Пробег" />
+                      <span>75 км</span>
+                      <img src="./assets/img/transmission.svg" alt="Пробег" />
+                      <span>АКПП</span>
+                    </div>
+                    <span>2024</span>
+                    <span>от 13 500 000</span>
+                  </div>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img
+                    src="./assets/img/tc.jpeg"
+                    alt="Card Image"
+                    class="card-image"
+                  />
+                  <div class="card-item-description">
+                    <p>Toyota Corolla</p>
+                    <p>1.8 HEV CVT (98 л.с.) FWD</p>
+                    <div class="card-item-kpp-mileage">
+                      <img src="./assets/img/speedometer.svg" alt="Пробег" />
+                      <span>Без пробега</span>
+                      <img src="./assets/img/transmission.svg" alt="Пробег" />
+                      <span>Вариатор</span>
+                    </div>
+                    <span>2024</span>
+                    <span>от 2 500 000</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <div class="swiper-pagination"></div>
+
+            <!-- Navigation Buttons -->
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+          </div>
+        </div>
+        <!-- <div class="main__catalog-menu">
+          <button class="main__catalog-back">&lt;</button>
+          <button class="main__catalog-forward">&gt;</button>
+        </div> -->
+        <h3 class="main__catalog-advantages-header">Почему выбирают нас?</h3>
+        <div class="main__catalog-advantages">
+          <div class="main__catalog-advantage">
+            <img src="./assets/img/advantages.svg" alt="" />
+            <h4 class="main__catalog-advantage-header">Специальные условия</h4>
+            <p>
+              Мы предлагаем своим клиентам самые выгодные условия для покупок
+            </p>
+          </div>
+          <div class="main__catalog-advantage">
+            <img src="./assets/img/car.svg" alt="" />
+            <h4 class="main__catalog-advantage-header">Постоянные поставки</h4>
+            <p>
+              Налаженная цепочка поставок и постоянно пополняющийся ассортимент
+            </p>
+          </div>
+          <div class="main__catalog-advantage">
+            <img src="./assets/img/ruble.svg" alt="" />
+            <h4 class="main__catalog-advantage-header">Приятные цены</h4>
+            <p>
+              Наш финансовый отдел предлагает лучшие цены на рынке, чтобы вы
+              могли осуществить мечты
+            </p>
+          </div>
+          <div class="main__catalog-advantage">
+            <img src="./assets/img/car-repair.svg" alt="" />
+            <h4 class="main__catalog-advantage-header">Сервис обслуживания</h4>
+            <p>
+              Активная поддержка клиентов. Мы предоставляем долгосрочную
+              гарантию каждому покупателю
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content content-container">
+        <div class="footer__contacts">
+          <a href="tel:+7 888 888 89 29" class="main__info-contact-link"
+            >+7 888 888 89 29</a
+          >
+          <a href="mailto:contact@rapidauto.ru" class="main__info-contact-link"
+            >contact@rapidauto.ru</a
+          >
+          <address class="footer__company-adress">
+            <span>Балтийская ул., 88, г. Барнаул</span>
+          </address>
+          <div class="footer__contacts-socials">
+            <a href="https://vk.com/" class="footer__contacts-social">VK</a>
+            <a href="https://telegram.org/" class="footer__contacts-social"
+              >TG</a
+            >
+            <a href="https://whatsapp.com/" class="footer__contacts-social"
+              >W</a
+            >
+          </div>
+        </div>
+        <div class="footer__sitemap">
+          <h3 class="footer__sitemap-header">Карта сайта</h3>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-element"><a href="/">О нас</a></li>
+              <li class="footer__nav-element">
+                <a href="/catalog">Каталог</a>
+              </li>
+              <li class="footer__nav-element">
+                <a href="/support">Поддержка</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- Linking SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./scipt.js"></script>
+  </body>
+</html>

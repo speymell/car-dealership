@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<!--  -->
+<!-- Не дописано -->
+<!--  -->
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Админ-панель</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      h1 {
+        text-align: center;
+      }
+      form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+      input[type="text"],
+      input[type="password"],
+      input[type="number"],
+      input[type="file"],
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      input[type="submit"] {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Админ-панель</h1>
+
+    <h2>Вход</h2>
+    <form id="loginForm">
+      <input
+        type="text"
+        id="username"
+        placeholder="Имя пользователя"
+        required
+      />
+      <input type="password" id="password" placeholder="Пароль" required />
+      <input type="submit" value="Войти" />
+    </form>
+
+    <!-- <h2>Добавить новый автомобиль</h2>
+    <form id="carForm" enctype="multipart/form-data">
+      <input type="text" id="company" placeholder="Компания" required />
+      <input type="text" id="name" placeholder="Название" required />
+      <input type="number" id="year" placeholder="Год" required />
+      <input
+        type="number"
+        id="horsePower"
+        placeholder="Лошадиные силы"
+        required
+      />
+      <input
+        type="text"
+        id="transmission"
+        placeholder="Коробка передач"
+        required
+      />
+      <input type="text" id="engine" placeholder="Двигатель" required />
+      <input type="number" id="price" placeholder="Цена" required />
+      <input type="text" id="color" placeholder="Цвет" required />
+      <input type="number" id="mileage" placeholder="Пробег" required />
+      <input type="file" id="images" name="images" multiple required />
+      <input type="submit" value="Добавить автомобиль" />
+    </form> -->
+
+    <!-- <script>
+      const API_BASE_URL = "http://127.0.0.1:3001";
+      // Обработка входа
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+
+          const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ username, password }),
+          });
+
+          const data = await response.json();
+          if (response.ok) {
+            localStorage.setItem("token", data.token); // Сохранение токена в localStorage
+            alert("Вы успешно вошли в систему!");
+          } else {
+            alert(data.message);
+          }
+        });
+
+      // Обработка добавления автомобиля
+      document
+        .getElementById("carForm")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const token = localStorage.getItem("token"); // Получение токена из localStorage
+
+          const formData = new FormData();
+          formData.append("company", document.getElementById("company").value);
+          formData.append("name", document.getElementById("name").value);
+          formData.append("year", document.getElementById("year").value);
+          formData.append(
+            "horsePower",
+            document.getElementById("horsePower").value
+          );
+          formData.append(
+            " transmission",
+            document.getElementById("transmission").value
+          );
+          formData.append("engine", document.getElementById("engine").value);
+          formData.append("price", document.getElementById("price").value);
+          formData.append("color", document.getElementById("color").value);
+          formData.append("mileage", document.getElementById("mileage").value);
+          const images = document.getElementById("images").files;
+          for (let i = 0; i < images.length; i++) {
+            formData.append("images", images[i]);
+          }
+
+          const response = await fetch("/api/cars", {
+            method: "POST",
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+            body: formData,
+          });
+
+          const data = await response.json();
+          if (response.ok) {
+            alert("Автомобиль успешно добавлен!");
+            document.getElementById("carForm").reset(); // Сброс формы
+          } else {
+            alert(data.message);
+          }
+        });
+    </script> -->
+  </body>
+</html>
